@@ -33,6 +33,7 @@ class MainSim:
         self.imagePIL = imagePIL.getInterface()
         self.imageRaw = None
         self.elapsedHalfClocks = 0
+        self.start_time=time.time()
         TransistorIndex.glo_time=time.time()
 
         # The console simulator ties together a simulation
@@ -53,6 +54,8 @@ class MainSim:
             print('Entering simulation loop')
             while True:
                 self.callback_updateSim()
+                if(time.time()-self.start_time>=1500):
+                    break
             print('Exited simulation loop')
             print(TransistorIndex.list_for_graphs)
                 
