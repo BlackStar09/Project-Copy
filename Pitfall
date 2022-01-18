@@ -1,0 +1,488 @@
+---------------------------------------------------------
+|  Visual6502.org transistor-level simulation of an     |
+|  Atari 2600 game console.                             |
+|  ** Be patient ** It can take up to 10,000 or 40,000  |
+|  half clock cycles of the 6502 CPU before visible     |
+|  pixels appear.                                       |
+|  Hit ESC to exit the OpenGL rendering or CTRL-C       |
+|  See params.py for the ROM file location.             |
+---------------------------------------------------------
+Done importing OpenGL.  A window should appear to show pixels and image frames
+Creating ImagePIL class to save frame images
+Loading chips/net_6502.pkl
+Loading chips/net_TIA.pkl
+Setting 6502 program to ROM image roms/DonkeyKong.bin
+loadProgramBytes base addr $F000
+NMI vector:     2 2
+Reset vector:   F0 0
+IRQ/BRK vector: F0 0
+Starting 6502 reset sequence: pulling RES low
+Setting 6502 RES high
+Finished 6502 reset sequence
+Entering glut render loop with simulation callback
+ERROR: 6507 ROM reading addr from 0x1000 to 0x1FFF: 0x7EF
+ERROR: 6507 ROM reading addr from 0x1000 to 0x1FFF: 0x7EF
+6507 WRITE to [0x0000]: 0x00  at 6507 halfclock 49
+VSYNC high at TIA halfclock 146
+6507 WRITE to [0x0001]: 0x00  at 6507 halfclock 67
+VBLANK at TIA halfclock 200
+6507 WRITE to [0x0002]: 0x00  at 6507 halfclock 85
+                                          4427 wires/clk,  14.9595 msec/clk
+                                          1815 wires/clk,  12.0143 msec/clk
+6507 WRITE to [0x0003]: 0x00  at 6507 halfclock 171
+                                          1733 wires/clk,  11.6922 msec/clk
+6507 WRITE to [0x0004]: 0x00  at 6507 halfclock 189
+6507 WRITE to [0x0005]: 0x00  at 6507 halfclock 207
+                                          1657 wires/clk,  10.8663 msec/clk
+6507 WRITE to [0x0006]: 0x00  at 6507 halfclock 225
+6507 WRITE to [0x0007]: 0x00  at 6507 halfclock 243
+                                          2005 wires/clk,  13.9263 msec/clk
+6507 WRITE to [0x0008]: 0x00  at 6507 halfclock 261
+6507 WRITE to [0x0009]: 0x00  at 6507 halfclock 279
+6507 WRITE to [0x000A]: 0x00  at 6507 halfclock 297
+                                          2060 wires/clk,  14.4541 msec/clk
+6507 WRITE to [0x000B]: 0x00  at 6507 halfclock 315
+6507 WRITE to [0x000C]: 0x00  at 6507 halfclock 333
+                                          1898 wires/clk,  12.2978 msec/clk
+6507 WRITE to [0x000D]: 0x00  at 6507 halfclock 351
+6507 WRITE to [0x000E]: 0x00  at 6507 halfclock 369
+                                          1756 wires/clk,  12.5334 msec/clk
+6507 WRITE to [0x000F]: 0x00  at 6507 halfclock 387
+6507 WRITE to [0x0010]: 0x00  at 6507 halfclock 405
+6507 WRITE to [0x0011]: 0x00  at 6507 halfclock 423
+                                          2059 wires/clk,  13.4016 msec/clk
+6507 WRITE to [0x0012]: 0x00  at 6507 halfclock 441
+6507 WRITE to [0x0013]: 0x00  at 6507 halfclock 459
+                                          2049 wires/clk,  14.6874 msec/clk
+6507 WRITE to [0x0014]: 0x00  at 6507 halfclock 477
+6507 WRITE to [0x0015]: 0x00  at 6507 halfclock 495
+6507 WRITE to [0x0016]: 0x00  at 6507 halfclock 513
+                                          1694 wires/clk,  10.9324 msec/clk
+6507 WRITE to [0x0017]: 0x00  at 6507 halfclock 531
+6507 WRITE to [0x0018]: 0x00  at 6507 halfclock 549
+                                          1964 wires/clk,  12.7405 msec/clk
+6507 WRITE to [0x0019]: 0x00  at 6507 halfclock 567
+6507 WRITE to [0x001A]: 0x00  at 6507 halfclock 585
+                                          2074 wires/clk,  15.1781 msec/clk
+6507 WRITE to [0x001B]: 0x00  at 6507 halfclock 603
+6507 WRITE to [0x001C]: 0x00  at 6507 halfclock 621
+6507 WRITE to [0x001D]: 0x00  at 6507 halfclock 639
+                                          1927 wires/clk,  12.3715 msec/clk
+6507 WRITE to [0x001E]: 0x00  at 6507 halfclock 657
+6507 WRITE to [0x001F]: 0x00  at 6507 halfclock 675
+                                          1732 wires/clk,  11.2831 msec/clk
+6507 WRITE to [0x0020]: 0x00  at 6507 halfclock 693
+6507 WRITE to [0x0021]: 0x00  at 6507 halfclock 711
+                                          2054 wires/clk,  13.2347 msec/clk
+6507 WRITE to [0x0022]: 0x00  at 6507 halfclock 729
+6507 WRITE to [0x0023]: 0x00  at 6507 halfclock 747
+6507 WRITE to [0x0024]: 0x00  at 6507 halfclock 765
+                                          2051 wires/clk,  15.5225 msec/clk
+6507 WRITE to [0x0025]: 0x00  at 6507 halfclock 783
+6507 WRITE to [0x0026]: 0x00  at 6507 halfclock 801
+                                          1757 wires/clk,  11.3536 msec/clk
+6507 WRITE to [0x0027]: 0x00  at 6507 halfclock 819
+6507 WRITE to [0x0028]: 0x00  at 6507 halfclock 837
+6507 WRITE to [0x0029]: 0x00  at 6507 halfclock 855
+                                          1905 wires/clk,  12.3914 msec/clk
+6507 WRITE to [0x002A]: 0x00  at 6507 halfclock 873
+6507 WRITE to [0x002B]: 0x00  at 6507 halfclock 891
+                                          2058 wires/clk,  13.8199 msec/clk
+6507 WRITE to [0x002C]: 0x00  at 6507 halfclock 909
+6507 WRITE to [0x002D]: 0x00  at 6507 halfclock 927
+                                          2004 wires/clk,  13.1082 msec/clk
+6507 WRITE to [0x002E]: 0x00  at 6507 halfclock 945
+6507 WRITE to [0x002F]: 0x00  at 6507 halfclock 963
+6507 WRITE to [0x0030]: 0x00  at 6507 halfclock 981
+                                          1672 wires/clk,  13.6632 msec/clk
+6507 WRITE to [0x0031]: 0x00  at 6507 halfclock 999
+6507 WRITE to [0x0032]: 0x00  at 6507 halfclock 1017
+                                          2041 wires/clk,  13.2414 msec/clk
+6507 WRITE to [0x0033]: 0x00  at 6507 halfclock 1035
+6507 WRITE to [0x0034]: 0x00  at 6507 halfclock 1053
+                                          2071 wires/clk,  13.5377 msec/clk
+6507 WRITE to [0x0035]: 0x00  at 6507 halfclock 1071
+6507 WRITE to [0x0036]: 0x00  at 6507 halfclock 1089
+6507 WRITE to [0x0037]: 0x00  at 6507 halfclock 1107
+                                          1813 wires/clk,  12.0238 msec/clk
+6507 WRITE to [0x0038]: 0x00  at 6507 halfclock 1125
+6507 WRITE to [0x0039]: 0x00  at 6507 halfclock 1143
+                                          1834 wires/clk,  12.3799 msec/clk
+6507 WRITE to [0x003A]: 0x00  at 6507 halfclock 1161
+6507 WRITE to [0x003B]: 0x00  at 6507 halfclock 1179
+                                          2075 wires/clk,  16.7138 msec/clk
+6507 WRITE to [0x003C]: 0x00  at 6507 halfclock 1197
+6507 WRITE to [0x003D]: 0x00  at 6507 halfclock 1215
+6507 WRITE to [0x003E]: 0x00  at 6507 halfclock 1233
+                                          2039 wires/clk,  13.165 msec/clk
+6507 WRITE to [0x003F]: 0x00  at 6507 halfclock 1251
+6507 WRITE to [0x0040]: 0x00  at 6507 halfclock 1269
+VSYNC high at TIA halfclock 3804
+                                          1615 wires/clk,  10.5369 msec/clk
+6507 WRITE to [0x0041]: 0x00  at 6507 halfclock 1287
+VBLANK at TIA halfclock 3858
+6507 WRITE to [0x0042]: 0x00  at 6507 halfclock 1305
+                                          1946 wires/clk,  12.4905 msec/clk
+                                          1792 wires/clk,  11.6708 msec/clk
+6507 WRITE to [0x0043]: 0x00  at 6507 halfclock 1407
+                                          1718 wires/clk,  10.9769 msec/clk
+6507 WRITE to [0x0044]: 0x00  at 6507 halfclock 1425
+6507 WRITE to [0x0045]: 0x00  at 6507 halfclock 1443
+                                          1631 wires/clk,  10.817 msec/clk
+6507 WRITE to [0x0046]: 0x00  at 6507 halfclock 1461
+6507 WRITE to [0x0047]: 0x00  at 6507 halfclock 1479
+                                          2021 wires/clk,  13.0446 msec/clk
+6507 WRITE to [0x0048]: 0x00  at 6507 halfclock 1497
+6507 WRITE to [0x0049]: 0x00  at 6507 halfclock 1515
+6507 WRITE to [0x004A]: 0x00  at 6507 halfclock 1533
+                                          2064 wires/clk,  17.357 msec/clk
+6507 WRITE to [0x004B]: 0x00  at 6507 halfclock 1551
+6507 WRITE to [0x004C]: 0x00  at 6507 halfclock 1569
+                                          1858 wires/clk,  12.0444 msec/clk
+6507 WRITE to [0x004D]: 0x00  at 6507 halfclock 1587
+6507 WRITE to [0x004E]: 0x00  at 6507 halfclock 1605
+6507 WRITE to [0x004F]: 0x00  at 6507 halfclock 1623
+                                          1784 wires/clk,  11.5021 msec/clk
+6507 WRITE to [0x0050]: 0x00  at 6507 halfclock 1641
+6507 WRITE to [0x0051]: 0x00  at 6507 halfclock 1659
+                                          2073 wires/clk,  13.5758 msec/clk
+6507 WRITE to [0x0052]: 0x00  at 6507 halfclock 1677
+6507 WRITE to [0x0053]: 0x00  at 6507 halfclock 1695
+                                          2056 wires/clk,  13.2849 msec/clk
+6507 WRITE to [0x0054]: 0x00  at 6507 halfclock 1713
+6507 WRITE to [0x0055]: 0x00  at 6507 halfclock 1731
+6507 WRITE to [0x0056]: 0x00  at 6507 halfclock 1749
+                                          1674 wires/clk,  10.9088 msec/clk
+6507 WRITE to [0x0057]: 0x00  at 6507 halfclock 1767
+6507 WRITE to [0x0058]: 0x00  at 6507 halfclock 1785
+                                          1983 wires/clk,  12.8404 msec/clk
+6507 WRITE to [0x0059]: 0x00  at 6507 halfclock 1803
+6507 WRITE to [0x005A]: 0x00  at 6507 halfclock 1821
+                                          2066 wires/clk,  13.4504 msec/clk
+6507 WRITE to [0x005B]: 0x00  at 6507 halfclock 1839
+6507 WRITE to [0x005C]: 0x00  at 6507 halfclock 1857
+6507 WRITE to [0x005D]: 0x00  at 6507 halfclock 1875
+                                          1909 wires/clk,  12.4008 msec/clk
+6507 WRITE to [0x005E]: 0x00  at 6507 halfclock 1893
+6507 WRITE to [0x005F]: 0x00  at 6507 halfclock 1911
+                                          1750 wires/clk,  16.3868 msec/clk
+6507 WRITE to [0x0060]: 0x00  at 6507 halfclock 1929
+6507 WRITE to [0x0061]: 0x00  at 6507 halfclock 1947
+6507 WRITE to [0x0062]: 0x00  at 6507 halfclock 1965
+                                          2056 wires/clk,  13.3045 msec/clk
+6507 WRITE to [0x0063]: 0x00  at 6507 halfclock 1983
+6507 WRITE to [0x0064]: 0x00  at 6507 halfclock 2001
+                                          2043 wires/clk,  13.195 msec/clk
+6507 WRITE to [0x0065]: 0x00  at 6507 halfclock 2019
+6507 WRITE to [0x0066]: 0x00  at 6507 halfclock 2037
+                                          1746 wires/clk,  11.3994 msec/clk
+6507 WRITE to [0x0067]: 0x00  at 6507 halfclock 2055
+6507 WRITE to [0x0068]: 0x00  at 6507 halfclock 2073
+6507 WRITE to [0x0069]: 0x00  at 6507 halfclock 2091
+                                          1922 wires/clk,  12.4196 msec/clk
+6507 WRITE to [0x006A]: 0x00  at 6507 halfclock 2109
+6507 WRITE to [0x006B]: 0x00  at 6507 halfclock 2127
+                                          2060 wires/clk,  13.408 msec/clk
+6507 WRITE to [0x006C]: 0x00  at 6507 halfclock 2145
+6507 WRITE to [0x006D]: 0x00  at 6507 halfclock 2163
+                                          1980 wires/clk,  12.8309 msec/clk
+6507 WRITE to [0x006E]: 0x00  at 6507 halfclock 2181
+6507 WRITE to [0x006F]: 0x00  at 6507 halfclock 2199
+6507 WRITE to [0x0070]: 0x00  at 6507 halfclock 2217
+                                          1696 wires/clk,  11.0121 msec/clk
+6507 WRITE to [0x0071]: 0x00  at 6507 halfclock 2235
+6507 WRITE to [0x0072]: 0x00  at 6507 halfclock 2253
+                                          2040 wires/clk,  13.0511 msec/clk
+6507 WRITE to [0x0073]: 0x00  at 6507 halfclock 2271
+6507 WRITE to [0x0074]: 0x00  at 6507 halfclock 2289
+                                          2071 wires/clk,  13.3666 msec/clk
+6507 WRITE to [0x0075]: 0x00  at 6507 halfclock 2307
+6507 WRITE to [0x0076]: 0x00  at 6507 halfclock 2325
+6507 WRITE to [0x0077]: 0x00  at 6507 halfclock 2343
+                                          1790 wires/clk,  11.656 msec/clk
+6507 WRITE to [0x0078]: 0x00  at 6507 halfclock 2361
+6507 WRITE to [0x0079]: 0x00  at 6507 halfclock 2379
+                                          1857 wires/clk,  18.416 msec/clk
+6507 WRITE to [0x007A]: 0x00  at 6507 halfclock 2397
+6507 WRITE to [0x007B]: 0x00  at 6507 halfclock 2415
+6507 WRITE to [0x007C]: 0x00  at 6507 halfclock 2433
+                                          2080 wires/clk,  13.8861 msec/clk
+6507 WRITE to [0x007D]: 0x00  at 6507 halfclock 2451
+6507 WRITE to [0x007E]: 0x00  at 6507 halfclock 2469
+                                          2019 wires/clk,  13.1081 msec/clk
+6507 WRITE to [0x007F]: 0x00  at 6507 halfclock 2487
+6507 WRITE to [0x0080]: 0x00  at 6507 halfclock 2505
+                                          1623 wires/clk,  10.7294 msec/clk
+6507 WRITE to [0x0081]: 0x00  at 6507 halfclock 2523
+6507 WRITE to [0x0082]: 0x00  at 6507 halfclock 2541
+6507 WRITE to [0x0083]: 0x00  at 6507 halfclock 2559
+                                          2062 wires/clk,  13.983 msec/clk
+6507 WRITE to [0x0084]: 0x00  at 6507 halfclock 2577
+6507 WRITE to [0x0085]: 0x00  at 6507 halfclock 2595
+                                          2050 wires/clk,  13.5972 msec/clk
+6507 WRITE to [0x0086]: 0x00  at 6507 halfclock 2613
+6507 WRITE to [0x0087]: 0x00  at 6507 halfclock 2631
+                                          1816 wires/clk,  13.3842 msec/clk
+6507 WRITE to [0x0088]: 0x00  at 6507 halfclock 2649
+6507 WRITE to [0x0089]: 0x00  at 6507 halfclock 2667
+6507 WRITE to [0x008A]: 0x00  at 6507 halfclock 2685
+                                          1822 wires/clk,  11.9755 msec/clk
+6507 WRITE to [0x008B]: 0x00  at 6507 halfclock 2703
+6507 WRITE to [0x008C]: 0x00  at 6507 halfclock 2721
+                                          2061 wires/clk,  13.4081 msec/clk
+6507 WRITE to [0x008D]: 0x00  at 6507 halfclock 2739
+6507 WRITE to [0x008E]: 0x00  at 6507 halfclock 2757
+6507 WRITE to [0x008F]: 0x00  at 6507 halfclock 2775
+                                          2029 wires/clk,  13.0989 msec/clk
+6507 WRITE to [0x0090]: 0x00  at 6507 halfclock 2793
+6507 WRITE to [0x0091]: 0x00  at 6507 halfclock 2811
+                                          1661 wires/clk,  10.7931 msec/clk
+6507 WRITE to [0x0092]: 0x00  at 6507 halfclock 2829
+6507 WRITE to [0x0093]: 0x00  at 6507 halfclock 2847
+                                          2009 wires/clk,  13.3856 msec/clk
+6507 WRITE to [0x0094]: 0x00  at 6507 halfclock 2865
+6507 WRITE to [0x0095]: 0x00  at 6507 halfclock 2883
+6507 WRITE to [0x0096]: 0x00  at 6507 halfclock 2901
+                                          2052 wires/clk,  13.3169 msec/clk
+6507 WRITE to [0x0097]: 0x00  at 6507 halfclock 2919
+6507 WRITE to [0x0098]: 0x00  at 6507 halfclock 2937
+                                          1891 wires/clk,  12.2926 msec/clk
+6507 WRITE to [0x0099]: 0x00  at 6507 halfclock 2955
+6507 WRITE to [0x009A]: 0x00  at 6507 halfclock 2973
+                                          1768 wires/clk,  19.555 msec/clk
+6507 WRITE to [0x009B]: 0x00  at 6507 halfclock 2991
+6507 WRITE to [0x009C]: 0x00  at 6507 halfclock 3009
+6507 WRITE to [0x009D]: 0x00  at 6507 halfclock 3027
+                                          2050 wires/clk,  13.5235 msec/clk
+6507 WRITE to [0x009E]: 0x00  at 6507 halfclock 3045
+6507 WRITE to [0x009F]: 0x00  at 6507 halfclock 3063
+                                          2057 wires/clk,  13.4797 msec/clk
+6507 WRITE to [0x00A0]: 0x00  at 6507 halfclock 3081
+6507 WRITE to [0x00A1]: 0x00  at 6507 halfclock 3099
+6507 WRITE to [0x00A2]: 0x00  at 6507 halfclock 3117
+                                          1705 wires/clk,  11.1677 msec/clk
+6507 WRITE to [0x00A3]: 0x00  at 6507 halfclock 3135
+6507 WRITE to [0x00A4]: 0x00  at 6507 halfclock 3153
+                                          1932 wires/clk,  12.5695 msec/clk
+6507 WRITE to [0x00A5]: 0x00  at 6507 halfclock 3171
+6507 WRITE to [0x00A6]: 0x00  at 6507 halfclock 3189
+                                          2078 wires/clk,  13.7067 msec/clk
+6507 WRITE to [0x00A7]: 0x00  at 6507 halfclock 3207
+6507 WRITE to [0x00A8]: 0x00  at 6507 halfclock 3225
+6507 WRITE to [0x00A9]: 0x00  at 6507 halfclock 3243
+                                          1935 wires/clk,  12.5531 msec/clk
+6507 WRITE to [0x00AA]: 0x00  at 6507 halfclock 3261
+6507 WRITE to [0x00AB]: 0x00  at 6507 halfclock 3279
+                                          1700 wires/clk,  11.0125 msec/clk
+6507 WRITE to [0x00AC]: 0x00  at 6507 halfclock 3297
+6507 WRITE to [0x00AD]: 0x00  at 6507 halfclock 3315
+                                          2059 wires/clk,  13.4119 msec/clk
+6507 WRITE to [0x00AE]: 0x00  at 6507 halfclock 3333
+6507 WRITE to [0x00AF]: 0x00  at 6507 halfclock 3351
+6507 WRITE to [0x00B0]: 0x00  at 6507 halfclock 3369
+                                          2063 wires/clk,  13.446 msec/clk
+6507 WRITE to [0x00B1]: 0x00  at 6507 halfclock 3387
+6507 WRITE to [0x00B2]: 0x00  at 6507 halfclock 3405
+                                          1743 wires/clk,  11.3951 msec/clk
+6507 WRITE to [0x00B3]: 0x00  at 6507 halfclock 3423
+6507 WRITE to [0x00B4]: 0x00  at 6507 halfclock 3441
+                                          1909 wires/clk,  12.4095 msec/clk
+6507 WRITE to [0x00B5]: 0x00  at 6507 halfclock 3459
+6507 WRITE to [0x00B6]: 0x00  at 6507 halfclock 3477
+6507 WRITE to [0x00B7]: 0x00  at 6507 halfclock 3495
+                                          2072 wires/clk,  13.6022 msec/clk
+6507 WRITE to [0x00B8]: 0x00  at 6507 halfclock 3513
+6507 WRITE to [0x00B9]: 0x00  at 6507 halfclock 3531
+                                          1976 wires/clk,  13.0424 msec/clk
+6507 WRITE to [0x00BA]: 0x00  at 6507 halfclock 3549
+6507 WRITE to [0x00BB]: 0x00  at 6507 halfclock 3567
+6507 WRITE to [0x00BC]: 0x00  at 6507 halfclock 3585
+                                          1672 wires/clk,  10.9357 msec/clk
+6507 WRITE to [0x00BD]: 0x00  at 6507 halfclock 3603
+6507 WRITE to [0x00BE]: 0x00  at 6507 halfclock 3621
+                                          2056 wires/clk,  13.359 msec/clk
+6507 WRITE to [0x00BF]: 0x00  at 6507 halfclock 3639
+6507 WRITE to [0x00C0]: 0x00  at 6507 halfclock 3657
+                                          2043 wires/clk,  13.2348 msec/clk
+6507 WRITE to [0x00C1]: 0x00  at 6507 halfclock 3675
+6507 WRITE to [0x00C2]: 0x00  at 6507 halfclock 3693
+6507 WRITE to [0x00C3]: 0x00  at 6507 halfclock 3711
+                                          1813 wires/clk,  11.824 msec/clk
+6507 WRITE to [0x00C4]: 0x00  at 6507 halfclock 3729
+6507 WRITE to [0x00C5]: 0x00  at 6507 halfclock 3747
+                                          1841 wires/clk,  21.9643 msec/clk
+6507 WRITE to [0x00C6]: 0x00  at 6507 halfclock 3765
+6507 WRITE to [0x00C7]: 0x00  at 6507 halfclock 3783
+                                          2049 wires/clk,  13.2391 msec/clk
+6507 WRITE to [0x00C8]: 0x00  at 6507 halfclock 3801
+6507 WRITE to [0x00C9]: 0x00  at 6507 halfclock 3819
+6507 WRITE to [0x00CA]: 0x00  at 6507 halfclock 3837
+                                          2042 wires/clk,  13.2814 msec/clk
+6507 WRITE to [0x00CB]: 0x00  at 6507 halfclock 3855
+6507 WRITE to [0x00CC]: 0x00  at 6507 halfclock 3873
+                                          1627 wires/clk,  10.5181 msec/clk
+6507 WRITE to [0x00CD]: 0x00  at 6507 halfclock 3891
+6507 WRITE to [0x00CE]: 0x00  at 6507 halfclock 3909
+6507 WRITE to [0x00CF]: 0x00  at 6507 halfclock 3927
+                                          2017 wires/clk,  13.1624 msec/clk
+6507 WRITE to [0x00D0]: 0x00  at 6507 halfclock 3945
+6507 WRITE to [0x00D1]: 0x00  at 6507 halfclock 3963
+                                          2065 wires/clk,  13.7932 msec/clk
+6507 WRITE to [0x00D2]: 0x00  at 6507 halfclock 3981
+6507 WRITE to [0x00D3]: 0x00  at 6507 halfclock 3999
+                                          1864 wires/clk,  12.2543 msec/clk
+6507 WRITE to [0x00D4]: 0x00  at 6507 halfclock 4017
+6507 WRITE to [0x00D5]: 0x00  at 6507 halfclock 4035
+6507 WRITE to [0x00D6]: 0x00  at 6507 halfclock 4053
+                                          1785 wires/clk,  11.9044 msec/clk
+6507 WRITE to [0x00D7]: 0x00  at 6507 halfclock 4071
+6507 WRITE to [0x00D8]: 0x00  at 6507 halfclock 4089
+                                          2069 wires/clk,  13.4854 msec/clk
+6507 WRITE to [0x00D9]: 0x00  at 6507 halfclock 4107
+6507 WRITE to [0x00DA]: 0x00  at 6507 halfclock 4125
+                                          2044 wires/clk,  13.54 msec/clk
+6507 WRITE to [0x00DB]: 0x00  at 6507 halfclock 4143
+6507 WRITE to [0x00DC]: 0x00  at 6507 halfclock 4161
+6507 WRITE to [0x00DD]: 0x00  at 6507 halfclock 4179
+                                          1671 wires/clk,  11.4361 msec/clk
+6507 WRITE to [0x00DE]: 0x00  at 6507 halfclock 4197
+6507 WRITE to [0x00DF]: 0x00  at 6507 halfclock 4215
+                                          1980 wires/clk,  13.8053 msec/clk
+6507 WRITE to [0x00E0]: 0x00  at 6507 halfclock 4233
+6507 WRITE to [0x00E1]: 0x00  at 6507 halfclock 4251
+6507 WRITE to [0x00E2]: 0x00  at 6507 halfclock 4269
+                                          2062 wires/clk,  13.5125 msec/clk
+6507 WRITE to [0x00E3]: 0x00  at 6507 halfclock 4287
+6507 WRITE to [0x00E4]: 0x00  at 6507 halfclock 4305
+                                          1896 wires/clk,  12.4115 msec/clk
+6507 WRITE to [0x00E5]: 0x00  at 6507 halfclock 4323
+6507 WRITE to [0x00E6]: 0x00  at 6507 halfclock 4341
+                                          1755 wires/clk,  12.1412 msec/clk
+6507 WRITE to [0x00E7]: 0x00  at 6507 halfclock 4359
+6507 WRITE to [0x00E8]: 0x00  at 6507 halfclock 4377
+6507 WRITE to [0x00E9]: 0x00  at 6507 halfclock 4395
+                                          2052 wires/clk,  13.4192 msec/clk
+6507 WRITE to [0x00EA]: 0x00  at 6507 halfclock 4413
+6507 WRITE to [0x00EB]: 0x00  at 6507 halfclock 4431
+                                          2037 wires/clk,  13.2326 msec/clk
+6507 WRITE to [0x00EC]: 0x00  at 6507 halfclock 4449
+6507 WRITE to [0x00ED]: 0x00  at 6507 halfclock 4467
+                                          1738 wires/clk,  11.2306 msec/clk
+6507 WRITE to [0x00EE]: 0x00  at 6507 halfclock 4485
+6507 WRITE to [0x00EF]: 0x00  at 6507 halfclock 4503
+6507 WRITE to [0x00F0]: 0x00  at 6507 halfclock 4521
+                                          1926 wires/clk,  13.114 msec/clk
+6507 WRITE to [0x00F1]: 0x00  at 6507 halfclock 4539
+6507 WRITE to [0x00F2]: 0x00  at 6507 halfclock 4557
+                                          2049 wires/clk,  13.5108 msec/clk
+6507 WRITE to [0x00F3]: 0x00  at 6507 halfclock 4575
+6507 WRITE to [0x00F4]: 0x00  at 6507 halfclock 4593
+                                          1976 wires/clk,  13.03 msec/clk
+6507 WRITE to [0x00F5]: 0x00  at 6507 halfclock 4611
+6507 WRITE to [0x00F6]: 0x00  at 6507 halfclock 4629
+6507 WRITE to [0x00F7]: 0x00  at 6507 halfclock 4647
+                                          1694 wires/clk,  11.2803 msec/clk
+6507 WRITE to [0x00F8]: 0x00  at 6507 halfclock 4665
+6507 WRITE to [0x00F9]: 0x00  at 6507 halfclock 4683
+                                          2037 wires/clk,  26.0926 msec/clk
+6507 WRITE to [0x00FA]: 0x00  at 6507 halfclock 4701
+6507 WRITE to [0x00FB]: 0x00  at 6507 halfclock 4719
+6507 WRITE to [0x00FC]: 0x00  at 6507 halfclock 4737
+                                          2067 wires/clk,  13.4656 msec/clk
+6507 WRITE to [0x00FD]: 0x00  at 6507 halfclock 4755
+6507 WRITE to [0x00FE]: 0x00  at 6507 halfclock 4773
+                                          1782 wires/clk,  11.9121 msec/clk
+6507 WRITE to [0x00FF]: 0x00  at 6507 halfclock 4791
+6507 WRITE to [0x01FF]: 0xF0  at 6507 halfclock 4807
+6507 WRITE to [0x01FE]: 0x0E  at 6507 halfclock 4809
+                                          1848 wires/clk,  12.6244 msec/clk
+6507 WRITE to [0x009C]: 0x2D  at 6507 halfclock 4831
+6507 WRITE to [0x009B]: 0x9A  at 6507 halfclock 4857
+                                          2082 wires/clk,  14.2514 msec/clk
+6507 WRITE to [0x009A]: 0x6A  at 6507 halfclock 4883
+6507 WRITE to [0x0099]: 0x03  at 6507 halfclock 4909
+                                          2017 wires/clk,  13.1002 msec/clk
+6507 WRITE to [0x0098]: 0xFF  at 6507 halfclock 4935
+                                          1611 wires/clk,  10.5205 msec/clk
+6507 WRITE to [0x0097]: 0x8D  at 6507 halfclock 4961
+6507 WRITE to [0x0096]: 0xFF  at 6507 halfclock 4987
+                                          2064 wires/clk,  13.7753 msec/clk
+6507 WRITE to [0x0095]: 0x7F  at 6507 halfclock 5013
+                                          2051 wires/clk,  13.64 msec/clk
+6507 WRITE to [0x0094]: 0x08  at 6507 halfclock 5039
+6507 WRITE to [0x0093]: 0x31  at 6507 halfclock 5065
+                                          1824 wires/clk,  11.9453 msec/clk
+6507 WRITE to [0x0092]: 0x00  at 6507 halfclock 5091
+                                          1818 wires/clk,  12.0544 msec/clk
+6507 WRITE to [0x00A3]: 0x02  at 6507 halfclock 5133
+6507 WRITE to [0x0091]: 0x00  at 6507 halfclock 5141
+6507 WRITE to [0x0091]: 0xFF  at 6507 halfclock 5143
+6507 WRITE to [0x008E]: 0x00  at 6507 halfclock 5151
+6507 WRITE to [0x008E]: 0xFF  at 6507 halfclock 5153
+6507 WRITE to [0x0009]: 0x00  at 6507 halfclock 5165
+                                          2049 wires/clk,  13.8117 msec/clk
+6507 WRITE to [0x0002]: 0xFF  at 6507 halfclock 5175
+                                          1860 wires/clk,  13.2076 msec/clk
+6507 WRITE to [0x0001]: 0xFF  at 6507 halfclock 5215
+VBLANK at TIA halfclock 15640
+6507 WRITE to [0x00E7]: 0x00  at 6507 halfclock 5235
+6507 WRITE to [0x00E7]: 0x01  at 6507 halfclock 5237
+                                          1640 wires/clk,  13.6157 msec/clk
+6507 WRITE to [0x00FD]: 0x22  at 6507 halfclock 5257
+6507 WRITE to [0x00F7]: 0x5D  at 6507 halfclock 5265
+6507 WRITE to [0x00FC]: 0x22  at 6507 halfclock 5283
+6507 WRITE to [0x00F6]: 0x5D  at 6507 halfclock 5291
+                                          2006 wires/clk,  13.7227 msec/clk
+6507 WRITE to [0x00FB]: 0x22  at 6507 halfclock 5309
+6507 WRITE to [0x00F5]: 0x5D  at 6507 halfclock 5317
+6507 WRITE to [0x00FA]: 0x22  at 6507 halfclock 5335
+                                          2060 wires/clk,  15.0942 msec/clk
+6507 WRITE to [0x00F4]: 0x5D  at 6507 halfclock 5343
+6507 WRITE to [0x00F9]: 0x22  at 6507 halfclock 5361
+6507 WRITE to [0x00F3]: 0x5D  at 6507 halfclock 5369
+                                          1897 wires/clk,  12.4906 msec/clk
+6507 WRITE to [0x00F8]: 0x22  at 6507 halfclock 5387
+6507 WRITE to [0x00F2]: 0x5D  at 6507 halfclock 5395
+6507 WRITE to [0x00E8]: 0x00  at 6507 halfclock 5411
+6507 WRITE to [0x00E8]: 0x01  at 6507 halfclock 5413
+                                          1765 wires/clk,  12.8559 msec/clk
+6507 READ [0x280]: 0xFF
+6507 WRITE to [0x008A]: 0x00  at 6507 halfclock 5461
+                                          2052 wires/clk,  13.8853 msec/clk
+6507 WRITE to [0x008E]: 0x00  at 6507 halfclock 5477
+6507 WRITE to [0x01FF]: 0xF0  at 6507 halfclock 5485
+6507 WRITE to [0x01FE]: 0x72  at 6507 halfclock 5487
+                                          2048 wires/clk,  15.1434 msec/clk
+6507 WRITE to [0x009C]: 0x2D  at 6507 halfclock 5509
+6507 WRITE to [0x009B]: 0x9A  at 6507 halfclock 5535
+                                          1712 wires/clk,  11.375 msec/clk
+6507 WRITE to [0x009A]: 0x6A  at 6507 halfclock 5561
+6507 WRITE to [0x0099]: 0x03  at 6507 halfclock 5587
+                                          1936 wires/clk,  13.9453 msec/clk
+6507 WRITE to [0x0098]: 0xFF  at 6507 halfclock 5613
+                                          2065 wires/clk,  14.746 msec/clk
+6507 WRITE to [0x0097]: 0x8D  at 6507 halfclock 5639
+6507 WRITE to [0x0096]: 0xFF  at 6507 halfclock 5665
+                                          1932 wires/clk,  12.7567 msec/clk
+6507 WRITE to [0x0095]: 0x7F  at 6507 halfclock 5691
+6507 WRITE to [0x0094]: 0x08  at 6507 halfclock 5717
+                                          1700 wires/clk,  12.3485 msec/clk
+6507 WRITE to [0x0093]: 0x31  at 6507 halfclock 5743
+                                          2067 wires/clk,  14.8653 msec/clk
+6507 WRITE to [0x0092]: 0x00  at 6507 halfclock 5769
+                                          2038 wires/clk,  13.3576 msec/clk
+6507 READ [0x282]: 0xB
+                                          1758 wires/clk,  2062.71 msec/clk
+6507 WRITE to [0x00A4]: 0x50  at 6507 halfclock 5883
+                                          1916 wires/clk,  21.723 msec/clk
+6507 WRITE to [0x008C]: 0xFF  at 6507 halfclock 5893
+6507 WRITE to [0x00E8]: 0x00  at 6507 halfclock 5899
+6507 WRITE to [0x0091]: 0x00  at 6507 halfclock 5905
+                                          2068 wires/clk,  16.0616 msec/clk
+                                          1984 wires/clk,  16.4532 msec/clk
+                                          1688 wires/clk,  11.2719 msec/clk
+                                          2075 wires/clk,  14.8731 msec/clk
+6507 WRITE to [0x00ED]: 0x00  at 6507 halfclock 6067
+6507 WRITE to [0x00E5]: 0x2A  at 6507 halfclock 6073
+6507 WRITE to [0x00F9]: 0x4C  at 6507 halfclock 6089
+6507 WRITE to [0x00E4]: 0
