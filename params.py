@@ -4,8 +4,8 @@
 #  SpaceInvaders starts to render visible pixels when
 #  the cpu halfClkCount reaches about 11000
 #romFile = 'roms/SpaceInvaders.bin'
-#romFile = 'roms/Pitfall.bin'
-romFile = 'roms/DonkeyKong.bin'
+romFile = 'roms/Pitfall.bin'
+#romFile = 'roms/DonkeyKong.bin'
 #  8kb ROM, spins reading 0x282 switches
 #romFile = 'roms/Asteroids.bin'
 #  2kb ROM

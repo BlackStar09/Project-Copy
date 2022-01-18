@@ -45,11 +45,11 @@ class MainSim:
         # For measuring how fast the simulation is running
         self.lastUpdateTimeSec = None
 
-        if self.imageGL != None:
-            print('Entering glut render loop with simulation callback')
-            self.imageGL.enterRenderLoop(self.callback_updateSim)
-            print('Exited glut render loop')
-        elif self.imagePIL != None or self.imageRaw != None:
+        #if self.imageGL != None:
+        #    print('Entering glut render loop with simulation callback')
+        #    self.imageGL.enterRenderLoop(self.callback_updateSim)
+        #    print('Exited glut render loop')
+        if self.imagePIL != None or self.imageRaw != None:
             print('Entering simulation loop')
             while True:
                 self.callback_updateSim()
