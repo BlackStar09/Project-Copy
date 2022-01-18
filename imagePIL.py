@@ -51,7 +51,7 @@ class ImagePIL(ImageBase):
     def restartImage(self):
         # Save if we've got more than 80% of a frame
         if self.lastPixelY >= params.frameHeightPixels * 0.8:
-            fileName = 'frame_%s_%4.4d.png'%(self.dateTimeStr, self.frameCount)
+            fileName = 'Test_frame_%s_%4.4d.png'%(self.dateTimeStr, self.frameCount)
             filePath = self.outputDir + '/' + fileName
             print('Saving frame %d image to %s'%(self.frameCount, filePath))
             self.image.save(filePath)

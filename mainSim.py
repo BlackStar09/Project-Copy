@@ -54,7 +54,7 @@ class MainSim:
             print('Entering simulation loop')
             while True:
                 self.callback_updateSim()
-                if(time.time()-self.start_time>=1500):
+                if(time.time()-self.start_time>=900):
                     break
             print('Exited simulation loop')
             print(TransistorIndex.list_for_graphs)
