@@ -79,7 +79,7 @@ class CircuitSimulator(CircuitSimulatorBase):
                     transistor = self.transistorList[transIndex]
                     if transistor.gateState == NmosFet.GATE_LOW:
                         timeofchange = time.time() - TransistorIndex.glo_time
-                        TransistorIndex.list_for_graphs.append((timeofchange,transIndex))
+                        TransistorIndex.list_for_graphs.append((1,time.time(),transIndex))
                         self.turnTransistorOn(transistor)
                         TransistorIndex.glo_time = time.time()
             elif newHigh == False:
@@ -87,7 +87,7 @@ class CircuitSimulator(CircuitSimulatorBase):
                     transistor = self.transistorList[transIndex]
                     if transistor.gateState == NmosFet.GATE_HIGH:
                         timeofchange = time.time() - TransistorIndex.glo_time
-                        TransistorIndex.list_for_graphs.append((timeofchange,transIndex))
+                        TransistorIndex.list_for_graphs.append((0,time.time(),transIndex))
                         self.turnTransistorOff(transistor)
                         TransistorIndex.glo_time = time.time()
                 
